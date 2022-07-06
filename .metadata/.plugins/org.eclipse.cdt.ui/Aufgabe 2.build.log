@@ -1,0 +1,11 @@
+19:53:37 **** Incremental Build of configuration Debug for project Aufgabe 2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CharArrays.o" "..\\src\\CharArrays.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CharArraysAsStrings.o" "..\\src\\CharArraysAsStrings.cpp" 
+g++ -o "Aufgabe 2" "src\\CharArrays.o" "src\\CharArraysAsStrings.o" 
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\CharArraysAsStrings.o:C:\Users\Admin\eclipse-workspace\Aufgabe 2\Debug/../src/CharArraysAsStrings.cpp:23: multiple definition of `main'; src\CharArrays.o:C:\Users\Admin\eclipse-workspace\Aufgabe 2\Debug/../src/CharArrays.cpp:25: first defined here
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\CharArraysAsStrings.o:C:\Users\Admin\eclipse-workspace\Aufgabe 2\Debug/../src/CharArraysAsStrings.cpp:14: multiple definition of `slength'; src\CharArrays.o:C:\Users\Admin\eclipse-workspace\Aufgabe 2\Debug/../src/CharArrays.cpp:16: first defined here
+collect2.exe: error: ld returned 1 exit status
+
+19:53:38 Build Failed. 2 errors, 0 warnings. (took 706ms)
+

@@ -1,0 +1,728 @@
+10:19:27 **** Incremental Build of configuration Debug for project Aufgabe5 ****
+make all 
+make: Nothing to be done for `all'.
+10:19:57 **** Incremental Build of configuration Debug for project Aufgabe5 ****
+make all 
+make: Nothing to be done for `all'.
+10:20:01 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp:192:1: error: unterminated comment
+ /*void Baum::speichern(){
+ ^
+10:20:16 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+10:38:48 **** Incremental Build of configuration Debug for project Aufgabe5 ****
+make all 
+make: Nothing to be done for `all'.
+10:49:16 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+10:53:29 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+10:55:24 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+11:01:38 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+11:02:50 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+11:05:13 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::printtree(Baum::TreeNode*)':
+..\src\Baum.cpp:135:32: error: no matching function for call to 'Baum::printtree2(Baum::TreeNode*&, int, char [255], int)'
+     printtree2(node, 0, pfad, 0);
+                                ^
+In file included from ..\src\Baum.cpp:8:0:
+..\src\Baum.h:43:7: note: candidate: void Baum::printtree2(Baum::TreeNode*, bool)
+  void printtree2(TreeNode *node, bool vater);
+       ^~~~~~~~~~
+..\src\Baum.h:43:7: note:   candidate expects 2 arguments, 4 provided
+..\src\Baum.cpp: At global scope:
+..\src\Baum.cpp:138:6: error: prototype for 'void Baum::printtree2(Baum::TreeNode*, int, char*, bool)' does not match any in class 'Baum'
+ void Baum::printtree2(TreeNode *node, int tiefe, char *pfad, bool vater){
+      ^~~~
+In file included from ..\src\Baum.cpp:8:0:
+..\src\Baum.h:43:7: error: candidate is: void Baum::printtree2(Baum::TreeNode*, bool)
+  void printtree2(TreeNode *node, bool vater);
+       ^~~~~~~~~~
+11:06:12 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+11:07:52 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::savetree(Baum::TreeNode*)':
+..\src\Baum.cpp:194:19: error: no matching function for call to 'Baum::savetree2(Baum::TreeNode*&, int)'
+  savetree2(node, 0);
+                   ^
+In file included from ..\src\Baum.cpp:8:0:
+..\src\Baum.h:40:7: note: candidate: void Baum::savetree2(Baum::TreeNode*)
+  void savetree2(TreeNode *node);
+       ^~~~~~~~~
+..\src\Baum.h:40:7: note:   candidate expects 1 argument, 2 provided
+11:08:06 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+11:09:37 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+10:56:43 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+10:59:50 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+11:02:09 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+11:05:29 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+11:41:36 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+12:08:22 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::wurzelknoten()':
+..\src\Baum.cpp:36:26: error: 'struct Baum::TreeNode' has no member named 'ausgegeben'
+   36 |                 newnode->ausgegeben = false;
+      |                          ^~~~~~~~~~
+..\src\Baum.cpp: In member function 'void Baum::plusvater()':
+..\src\Baum.cpp:61:26: error: 'struct Baum::TreeNode' has no member named 'ausgegeben'
+   61 |                 newnode->ausgegeben = false;
+      |                          ^~~~~~~~~~
+..\src\Baum.cpp: In member function 'void Baum::plusmutter()':
+..\src\Baum.cpp:86:26: error: 'struct Baum::TreeNode' has no member named 'ausgegeben'
+   86 |                 newnode->ausgegeben = false;
+      |                          ^~~~~~~~~~
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:223:15: error: could not convert 'b' from 'std::string' {aka 'std::__cxx11::basic_string<char>'} to 'bool'
+  223 |         while(b){
+      |               ^
+      |               |
+      |               std::string {aka std::__cxx11::basic_string<char>}
+..\src\Baum.cpp:242:30: error: jump to case label
+  242 |                         case 'v':
+      |                              ^~~
+..\src\Baum.cpp:235:40: note:   crosses initialization of 'std::string nachname'
+  235 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:234:40: note:   crosses initialization of 'std::string vorname'
+  234 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:250:40: error: redeclaration of 'std::string vorname'
+  250 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:234:40: note: 'std::string vorname' previously declared here
+  234 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:251:40: error: redeclaration of 'std::string nachname'
+  251 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:235:40: note: 'std::string nachname' previously declared here
+  235 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:258:30: error: jump to case label
+  258 |                         case 'm':
+      |                              ^~~
+..\src\Baum.cpp:235:40: note:   crosses initialization of 'std::string nachname'
+  235 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:234:40: note:   crosses initialization of 'std::string vorname'
+  234 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:266:40: error: redeclaration of 'std::string vorname'
+  266 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:234:40: note: 'std::string vorname' previously declared here
+  234 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:267:40: error: redeclaration of 'std::string nachname'
+  267 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:235:40: note: 'std::string nachname' previously declared here
+  235 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:274:30: error: jump to case label
+  274 |                         case 'd':
+      |                              ^~~
+..\src\Baum.cpp:235:40: note:   crosses initialization of 'std::string nachname'
+  235 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:234:40: note:   crosses initialization of 'std::string vorname'
+  234 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:278:30: error: jump to case label
+  278 |                         case 'a':
+      |                              ^~~
+..\src\Baum.cpp:235:40: note:   crosses initialization of 'std::string nachname'
+  235 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:234:40: note:   crosses initialization of 'std::string vorname'
+  234 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:282:30: error: jump to case label
+  282 |                         case 'w':
+      |                              ^~~
+..\src\Baum.cpp:235:40: note:   crosses initialization of 'std::string nachname'
+  235 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:234:40: note:   crosses initialization of 'std::string vorname'
+  234 |                                 string vorname;
+      |                                        ^~~~~~~
+12:10:05 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:239:30: error: jump to case label
+  239 |                         case 'v':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:247:40: error: redeclaration of 'std::string vorname'
+  247 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:231:40: note: 'std::string vorname' previously declared here
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:248:40: error: redeclaration of 'std::string nachname'
+  248 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:232:40: note: 'std::string nachname' previously declared here
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:255:30: error: jump to case label
+  255 |                         case 'm':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:263:40: error: redeclaration of 'std::string vorname'
+  263 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:231:40: note: 'std::string vorname' previously declared here
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:264:40: error: redeclaration of 'std::string nachname'
+  264 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:232:40: note: 'std::string nachname' previously declared here
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:271:30: error: jump to case label
+  271 |                         case 'd':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:275:30: error: jump to case label
+  275 |                         case 'a':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:279:30: error: jump to case label
+  279 |                         case 'w':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+12:10:54 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:239:30: error: jump to case label
+  239 |                         case 'v':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:247:40: error: redeclaration of 'std::string vorname'
+  247 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:231:40: note: 'std::string vorname' previously declared here
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:248:40: error: redeclaration of 'std::string nachname'
+  248 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:232:40: note: 'std::string nachname' previously declared here
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:255:30: error: jump to case label
+  255 |                         case 'm':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:263:40: error: redeclaration of 'std::string vorname'
+  263 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:231:40: note: 'std::string vorname' previously declared here
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:264:40: error: redeclaration of 'std::string nachname'
+  264 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:232:40: note: 'std::string nachname' previously declared here
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:271:30: error: jump to case label
+  271 |                         case 'd':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:275:30: error: jump to case label
+  275 |                         case 'a':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+..\src\Baum.cpp:279:30: error: jump to case label
+  279 |                         case 'w':
+      |                              ^~~
+..\src\Baum.cpp:232:40: note:   crosses initialization of 'std::string nachname'
+  232 |                                 string nachname;
+      |                                        ^~~~~~~~
+..\src\Baum.cpp:231:40: note:   crosses initialization of 'std::string vorname'
+  231 |                                 string vorname;
+      |                                        ^~~~~~~
+12:12:01 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+12:12:53 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file Aufgabe5-2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:12:59 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+12:15:03 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+12:45:34 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:224:15: error: cannot resolve overloaded function 'getline' based on conversion to type 'bool'
+  224 |         while(getline){
+      |               ^~~~~~~
+12:46:11 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+12:47:33 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+12:49:35 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+12:50:16 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+12:53:30 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+12:56:51 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+13:00:41 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+13:12:19 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:241:46: warning: comparison with string literal results in unspecified behavior [-Waddress]
+  241 |                                 while(tmp[i] != "|"){
+..\src\Baum.cpp:241:46: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+..\src\Baum.cpp:248:46: warning: comparison with string literal results in unspecified behavior [-Waddress]
+  248 |                                 while(tmp[i] != "|"){
+..\src\Baum.cpp:248:46: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+..\src\Baum.cpp:256:30: error: jump to case label
+  256 |                         case 'v':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+..\src\Baum.cpp:267:30: error: jump to case label
+  267 |                         case 'm':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+..\src\Baum.cpp:278:30: error: jump to case label
+  278 |                         case 'd':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+..\src\Baum.cpp:282:30: error: jump to case label
+  282 |                         case 'a':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+..\src\Baum.cpp:286:30: error: jump to case label
+  286 |                         case 'w':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+13:12:48 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:256:30: error: jump to case label
+  256 |                         case 'v':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+..\src\Baum.cpp:267:30: error: jump to case label
+  267 |                         case 'm':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+..\src\Baum.cpp:278:30: error: jump to case label
+  278 |                         case 'd':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+..\src\Baum.cpp:282:30: error: jump to case label
+  282 |                         case 'a':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+..\src\Baum.cpp:286:30: error: jump to case label
+  286 |                         case 'w':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int i'
+  240 |                                 int i = 0;
+      |                                     ^
+13:13:35 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:256:30: error: jump to case label
+  256 |                         case 'v':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:267:30: error: jump to case label
+  267 |                         case 'm':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:278:30: error: jump to case label
+  278 |                         case 'd':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:282:30: error: jump to case label
+  282 |                         case 'a':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:286:30: error: jump to case label
+  286 |                         case 'w':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+13:14:54 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:256:30: error: jump to case label
+  256 |                         case 'v':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:267:30: error: jump to case label
+  267 |                         case 'm':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:278:30: error: jump to case label
+  278 |                         case 'd':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:282:30: error: jump to case label
+  282 |                         case 'a':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:286:30: error: jump to case label
+  286 |                         case 'w':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+13:15:21 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:241:43: error: 'k' was not declared in this scope
+  241 |                                 while(tmp[k] != '|'){
+      |                                           ^
+..\src\Baum.cpp:247:33: error: 'k' was not declared in this scope
+  247 |                                 k++;
+      |                                 ^
+13:15:28 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:256:30: error: jump to case label
+  256 |                         case 'v':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:267:30: error: jump to case label
+  267 |                         case 'm':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:278:30: error: jump to case label
+  278 |                         case 'd':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:282:30: error: jump to case label
+  282 |                         case 'a':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+..\src\Baum.cpp:286:30: error: jump to case label
+  286 |                         case 'w':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int k'
+  240 |                                 int k = 0;
+      |                                     ^
+13:15:50 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+..\src\Baum.cpp: In member function 'void Baum::einlesen()':
+..\src\Baum.cpp:247:33: error: 'k' was not declared in this scope
+  247 |                                 k++;
+      |                                 ^
+..\src\Baum.cpp:256:30: error: jump to case label
+  256 |                         case 'v':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int rkras'
+  240 |                                 int rkras = 0;
+      |                                     ^~~~~
+..\src\Baum.cpp:267:30: error: jump to case label
+  267 |                         case 'm':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int rkras'
+  240 |                                 int rkras = 0;
+      |                                     ^~~~~
+..\src\Baum.cpp:278:30: error: jump to case label
+  278 |                         case 'd':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int rkras'
+  240 |                                 int rkras = 0;
+      |                                     ^~~~~
+..\src\Baum.cpp:282:30: error: jump to case label
+  282 |                         case 'a':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int rkras'
+  240 |                                 int rkras = 0;
+      |                                     ^~~~~
+..\src\Baum.cpp:286:30: error: jump to case label
+  286 |                         case 'w':
+      |                              ^~~
+..\src\Baum.cpp:240:37: note:   crosses initialization of 'int rkras'
+  240 |                                 int rkras = 0;
+      |                                     ^~~~~
+13:16:35 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+C:/msys64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot find src\Aufgabe5-2.o: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+13:17:13 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+13:18:37 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+13:20:19 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+13:46:55 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+13:50:53 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+13:54:50 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+13:55:43 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+14:01:23 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+14:16:31 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+14:21:04 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe5-2.o" "..\\src\\Aufgabe5-2.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+14:30:22 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+14:45:01 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+14:50:39 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+14:55:01 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2
+Info: Nothing to build for Aufgabe5-2
+14:56:32 **** Incremental Build of configuration Debug for project Aufgabe5-2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Baum.o" "..\\src\\Baum.cpp" 
+g++ -o Aufgabe5-2.exe "src\\Aufgabe5-2.o" "src\\Baum.o" 
+Info: Nothing to build for Aufgabe5-2

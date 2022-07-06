@@ -1,0 +1,158 @@
+/*
+ * Baum.cpp
+ *
+ *  Created on: 23 Jun 2022
+ *      Author: Admin
+ */
+
+#include "Baum.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+Baum::Baum() {
+	// TODO Auto-generated constructor stub
+
+}
+
+Baum::~Baum() {
+	// TODO Auto-generated destructor stub
+}
+
+void Baum::wurzelknoten(){
+	if(wurzel){
+		cout << "Es wurde schon ein Wurzelknoten erstellt!" << endl;
+	}else{
+		newnode = new TreeNode;
+		newnode->vater = nullptr;
+		newnode->mutter = nullptr;
+		newnode->nachfahre = nullptr;
+		newnode->zeichen = "-->";
+		newnode->vzeichen = "-->";
+		newnode->ausgegeben = false;
+		wurzel = newnode;
+		runptr = wurzel;
+		string vorname;
+		string nachname;
+		cout << "Vorname: ";
+		cin >> vorname;
+		newnode->vorname = vorname;
+		cout << "Nachname: ";
+		cin >> nachname;
+		newnode->nachname = nachname;
+	}
+}
+
+void Baum::plusvater(){
+	if(!wurzel){
+		cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+	}else{
+		newnode = new TreeNode;
+		runptr->vater = newnode;
+		newnode->nachfahre = runptr;
+		newnode->zeichen = "/--";
+		newnode->vzeichen = "/--";
+		newnode->ausgegeben = false;
+		newnode->vater = nullptr;
+		newnode->mutter = nullptr;
+		string vorname;
+		string nachname;
+		cout << "Vorname: ";
+		cin >> vorname;
+		newnode->vorname = vorname;
+		cout << "Nachname: ";
+		cin >> nachname;
+		newnode->nachname = nachname;
+	}
+}
+
+void Baum::plusmutter(){
+	if(!wurzel){
+		cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+	}else{
+		newnode = new TreeNode;
+		runptr->mutter = newnode;
+		newnode->nachfahre = runptr;
+		newnode->zeichen = "\\--";
+		newnode->vzeichen = "\\--";
+		newnode->vater = nullptr;
+		newnode->mutter = nullptr;
+		string vorname;
+		string nachname;
+		cout << "Vorname: ";
+		cin >> vorname;
+		newnode->vorname = vorname;
+		cout << "Nachname: ";
+		cin >> nachname;
+		newnode->nachname = nachname;
+	}
+}
+
+void Baum::zuvater(){
+	if(!wurzel){
+		cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+	}else if(!runptr->vater){
+		cout << "Der Vaterknoten existiert nicht!" << endl;
+	}else{
+		runptr->zeichen = runptr->vzeichen;
+		runptr = runptr->vater;
+		runptr->zeichen = ">>>";
+
+	}
+}
+
+void Baum::zumutter(){
+	if(!wurzel){
+		cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+	}else if(!runptr->mutter){
+		cout << "Der Mutterknoten existiert nicht!" << endl;
+	}else{
+		runptr->zeichen = runptr->vzeichen;
+		runptr = runptr->mutter;
+		runptr->zeichen = ">>>";
+	}
+}
+
+void Baum::zunachfahre(){
+	if(!wurzel){
+		cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+	}else if(!runptr->nachfahre){
+		cout << "Sie befinden sich am Wurzelknoten!" << endl;
+	}else{
+		runptr->zeichen = runptr->vzeichen;
+		runptr = runptr->nachfahre;
+		runptr->zeichen = ">>>";
+	}
+}
+
+void Baum::printtree(){
+	int i = 0;
+	printptr = wurzel;
+	if(printptr->vater){
+		printptr = printptr->vater;
+	}else if(printptr->mutter){
+		printptr = printptr->mutter;
+	}
+
+
+	/*while(printptr->vater){
+		printptr = printptr->vater;
+		i++;
+	}
+	for(int j = i; j > 0; j--){
+		cout << "   ";
+	}
+	cout << printptr->zeichen << printptr->vorname << " " << printptr->nachname << endl;
+	printptr = printptr->nachfahre;
+	i--;
+	for(int j = i; j > 0; j--){
+		cout << "   ";
+	}
+	cout << printptr->zeichen << printptr->vorname << " " << printptr->nachname << endl;
+	while(printptr->vater){
+		printptr = printptr->vater;
+	}*/
+}
+
+
+

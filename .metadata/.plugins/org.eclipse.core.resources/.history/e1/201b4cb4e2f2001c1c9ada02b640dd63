@@ -1,0 +1,34 @@
+#include <iostream>
+#include "Baum.h"
+using namespace std;
+
+void aufforderung();
+
+char input;
+
+Baum b;
+
+int main() {
+	while(true){
+		aufforderung();
+		cin << input;
+	}
+
+
+	return 0;
+}
+
+
+
+void aufforderung(){
+	cout << "Auswahl:" << endl;
+	cout << "R: Erstellen eines Wurzelknotens" << endl;
+	cout << "V: Vater hinzufuegen" << endl;
+	cout << "M: Mutter hinzufuegen" << endl;
+	cout << "S: Speichern des Stammbaums" << endl;
+	cout << "F: Einlesen eines Stammbaums" << endl;
+	cout << "D: Gehe nach unten zu Vater" << endl;
+	cout << "A: Gehe nach unten zu Mutter" << endl;
+	cout << "W: Gehe nach oben zu Nachfahre" << endl;
+	cout << "Geben sie ihre Auswahl ein: ";
+}

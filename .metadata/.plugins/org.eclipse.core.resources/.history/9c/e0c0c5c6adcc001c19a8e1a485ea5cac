@@ -1,0 +1,48 @@
+//============================================================================
+// Name        : CharArrays.cpp
+// Author      : Thomas Hollstein
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Using new type string
+//============================================================================
+
+#include <iostream>
+#include <cstring>
+#include <stdlib.h>
+#include <regex>
+using namespace std;
+
+const unsigned int arraylength = 100;
+char mystring[arraylength];
+int slength;
+
+void PrintLetterByLetter(char* toPrint){
+  for(int i=0; i< slength; i++){
+    cout << toPrint[i] << " ";
+  }
+  cout << endl;
+}
+
+int main() {
+	cout << "Bitte Zeichenkette eingeben:" << endl;
+	//Bei Eingaben mit Leerzeichen versagt
+	//folgender Befehl:
+	//cin >> mystring;
+	//daher besser folgenden Befehl verwenden:
+	/*
+    cin.getline(mystring, arraylength);
+	slength = strlen(mystring);
+	cout << "Länge: " << slength << endl;
+	PrintLetterByLetter(mystring);
+	// String in Float-Wert umwandeln:
+	float fval = atof(mystring);
+	    cout << "Float-Wert: " << fval << endl;
+	*/
+	if(regex_match("24 3", regex("[^\f\t\r\n]"))){
+		cout << endl << "True";
+	}else{
+		cout << endl << "False";
+	}
+
+	return 0;
+}

@@ -1,0 +1,16 @@
+#include <iostream>
+#include "Baum.h"
+using namespace std;
+
+void aufforderung();
+
+char input;
+
+int main() {
+	while(true){
+
+	}
+
+
+	return 0;
+}

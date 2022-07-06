@@ -1,0 +1,163 @@
+#include <iostream>
+#include <string>
+#include <regex>
+using namespace std;
+
+enum inputtypes {
+	tcommand, toperator, toperand, terror
+};
+inputtypes icommand = inputtypes::tcommand;
+inputtypes ioperator = inputtypes::toperator;
+inputtypes ioperand = inputtypes::toperand;
+inputtypes ierror = inputtypes::terror;
+
+int ac = -1;
+bool CheckDoubleNumber(string cinput);
+inputtypes CheckInputType(string cinput);
+void stack_print();
+bool stack_push(double pushval);
+bool stack_pop(double *popval);
+double mystack[2] = {0};
+string input;
+int slength;
+
+int main() {
+	cout << "Bitte Zeichenkette eingeben:" << endl;
+	getline (cin, input);
+	slength = input.size();
+	inputtypes type = CheckInputType(input);
+	if(type == ioperand){
+		if(!stack_push(input)){
+			cout << "Stack is full!" << endl;
+		}
+		cout << endl << "operand";
+	}else if(type == ioperator){
+		cout << endl << "operator";
+	}else if(type == icommand){
+		cout << endl << "command";
+	}else{
+		cout << endl << "error";
+	}
+	/*if(CheckDoubleNumber(input)){
+		cout << endl << "True";
+	}else{
+		cout << endl << "False";
+	}*/
+	return 0;
+}
+
+bool CheckDoubleNumber(string cinput){
+	bool valid = true;
+	int i = 0;
+	int ecount = 0;
+	int periodcount = 0;
+	int signcount = 0;
+	if(regex_search(cinput, regex("[ \t\r\n\fa-df-zA-DF-Z]"))){
+		return false;
+	}
+	while(valid == true && i < slength){
+		switch(cinput[i]){
+			case 'e':
+				ecount++;
+				if(ecount > 1){
+					cout << "e";
+					valid = false;
+					return false;
+				}
+				if(signcount > 0){
+					signcount--;
+				}
+				break;
+			case '+':
+			case '-':
+				switch(cinput[--i]){
+					case '0':
+					case '1':
+					case '2':
+					case '3':
+					case '4':
+					case '5':
+					case '6':
+					case '7':
+					case '8':
+					case '9':
+					case '-':
+					case '+':
+					case ',':
+					case '.':
+						cout << "prev";
+						valid = false;
+						return false;
+				}
+				i++;
+
+				signcount++;
+				if(signcount > 1){
+					cout << "sign";
+					valid = false;
+					return false;
+				}
+				break;
+			case ',':
+			case '.':
+				periodcount++;
+				if(periodcount > 1){
+					cout << "period";
+					valid = false;
+					return false;
+				}
+				break;
+		}
+		cout << "A";
+		i++;
+	}
+	return true;
+}
+
+inputtypes CheckInputType(string cinput){
+	bool valid = true;
+	int i = 0;
+	while(valid == true && i < slength){
+		if(CheckDoubleNumber(cinput)){
+			return ioperand;
+		}else if(regex_search(cinput, regex("['+''\\-''*''/']"))){
+			valid = false;
+			return ioperator;
+		}else if(regex_search(cinput, regex("="))){
+			return icommand;
+		}else{
+			return ierror;
+		}
+	}
+
+	return ierror;
+}
+
+bool stack_push(double pushval){
+	ac++;
+	if(ac < 2){
+		mystack[ac] = pushval;
+		return true;
+	}
+	ac--;
+	return false;
+}
+
+bool stack_pop(double *popval){
+	if(ac > -1){
+		popval = stack[ac];
+		stack[ac] = 0;
+		ac--;
+		return true;
+	}
+	return false;
+}
+
+void stack_print(){
+	cout << stack[0] << endl << stack[1];
+}
+
+
+
+
+

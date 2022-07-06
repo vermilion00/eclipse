@@ -1,0 +1,9 @@
+12:31:35 **** Incremental Build of configuration Debug for project Aufgabe 4 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DList.o" "..\\src\\DList.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Aufgabe4.o" "..\\src\\Aufgabe4.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DStack.o" "..\\src\\DStack.cpp" 
+g++ -o "Aufgabe 4.exe" "src\\Aufgabe4.o" "src\\DList.o" "src\\DStack.o" 
+
+12:31:40 Build Finished. 0 errors, 0 warnings. (took 4s.569ms)
+

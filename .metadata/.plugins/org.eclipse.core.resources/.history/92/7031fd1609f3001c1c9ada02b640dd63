@@ -1,0 +1,17 @@
+/*
+ * Baum.h
+ *
+ *  Created on: 23 Jun 2022
+ *      Author: Admin
+ */
+
+#ifndef BAUM_H_
+#define BAUM_H_
+
+class Baum {
+public:
+	Baum();
+	virtual ~Baum();
+};
+
+#endif /* BAUM_H_ */

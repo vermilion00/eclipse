@@ -1,0 +1,45 @@
+//============================================================================
+// Name        : CharArrays.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Using new type string
+//============================================================================
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+string mystring;
+int slength;
+
+void PrintLetterByLetter(string toPrint){
+  for(int i=0; i< slength; i++){
+    cout << toPrint[i] << " ";
+  }
+  cout << endl;
+}
+
+int main() {
+	cout << "Bitte Zeichenkette eingeben:" << endl;
+	//Bei Eingaben mit Leerzeichen versagt
+	//folgender Befehl:
+	//cin >> mystring;
+	//daher besser folgenden Befehl verwenden:
+	getline (cin, mystring);
+	/*
+	slength = mystring.size();
+	cout << "Laenge: " << slength << endl;
+    PrintLetterByLetter(mystring);
+    // String in Double-Wert umwandeln:
+    double dval = stod(mystring, NULL);
+    cout << "Double-Wert: " << dval << endl;
+    */
+	if(regex_search(mystring, regex("[0-9]"))){
+		cout << endl << "True";
+	}else{
+		cout << endl << "False";
+	}
+
+	return 0;
+}

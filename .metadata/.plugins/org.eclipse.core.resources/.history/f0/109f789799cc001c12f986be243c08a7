@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+#define len 10
+
+int input[len] = {0};
+bool change = false;
+int count;
+
+void bubblesort(int array[len]);
+void swap(int &a, int &b);
+
+int main(){
+	for(int i = 0; i < len; i++){
+		cout << "Geben sie die " << i << ". Zahl ein: ";
+		cin >> input[i];
+	}
+	bubblesort(input);
+	for(int i = 0; i < len; i++){
+		cout << endl << input[i];
+	}
+	cout << endl << "Change count: " << count;
+	cin >> input[0];
+	return 0;
+}
+
+void bubblesort(int array[len]){
+	//for(int j = len; j > 1; --j){
+	int j = len;
+	while((change == true) && (j > 1)){
+		j--;
+		change = false;
+		for(int k = 0; k < j - 1; ++k){
+			if(array[k] > array[k+1]){
+				swap(array[k], array[k+1]);
+				count++;
+			}
+		}
+		cout << endl << "A";
+		if(change == false) {
+			cout << endl << "B";
+			break;
+		}
+	}
+}
+
+void swap(int &a, int &b){
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+	change = true;
+}
+
+
+
+
+

@@ -1,0 +1,70 @@
+/*
+ * Baum.h
+ *
+ *  Created on: 23 Jun 2022
+ *      Author: Admin
+ */
+
+#ifndef BAUM_H_
+#define BAUM_H_
+
+#include <string>
+using namespace std;
+
+class Baum {
+public:
+
+	struct TreeNode{
+		string vorname;
+		string nachname;
+		TreeNode *vater;
+		TreeNode *mutter;
+		TreeNode *nachfahre;
+	};
+
+	TreeNode *wurzel = nullptr, *runptr = nullptr;
+	TreeNode *newnode;
+
+	void wurzelknoten(){
+		newnode = new TreeNode;
+		newnode->vater = nullptr;
+		newnode->mutter = nullptr;
+		newnode->nachfahre = nullptr;
+		wurzel = newnode;
+	}
+
+	void plusvater(){
+		if(!wurzel){
+			cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+		}else{
+			runptr = newnode;
+			newnode = new TreeNode;
+			runptr->vater = newnode;
+			newnode->nachfahre = runptr;
+			newnode->vater = nullptr;
+			newnode->mutter = nullptr;
+			string vorname;
+			string nachname;
+			cout << "Vorname: ";
+			cin >> vorname;
+			newnode->vorname = vorname;
+			cout << "Nachname: ";
+			cin >> nachname;
+			newnode->nachname = nachname;
+		}
+	}
+
+	void plusmutter(){
+			runptr = newnode;
+			newnode = new TreeNode;
+			runptr->mutter = newnode;
+			newnode->nachfahre = runptr;
+			newnode->vater = nullptr;
+			newnode->mutter = nullptr;
+		}
+
+	Baum();
+	virtual ~Baum();
+};
+
+#endif /* BAUM_H_ */

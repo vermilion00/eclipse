@@ -1,0 +1,115 @@
+/*
+ * Baum.h
+ *
+ *  Created on: 23 Jun 2022
+ *      Author: Admin
+ */
+
+#ifndef BAUM_H_
+#define BAUM_H_
+
+#include <string>
+using namespace std;
+
+class Baum {
+public:
+
+	struct TreeNode{
+		string vorname;
+		string nachname;
+		TreeNode *vater;
+		TreeNode *mutter;
+		TreeNode *nachfahre;
+	};
+
+	TreeNode *wurzel = nullptr, *runptr = nullptr;
+	TreeNode *newnode;
+
+	void wurzelknoten(){
+		if(wurzel){
+			cout << "Es wurde schon ein Wurzelknoten erstellt!" << endl;
+		}else{
+			newnode = new TreeNode;
+			newnode->vater = nullptr;
+			newnode->mutter = nullptr;
+			newnode->nachfahre = nullptr;
+			wurzel = newnode;
+			runptr = wurzel;
+		}
+	}
+
+	void plusvater(){
+		if(!wurzel){
+			cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+		}else{
+			newnode = new TreeNode;
+			runptr->vater = newnode;
+			newnode->nachfahre = runptr;
+			newnode->vater = nullptr;
+			newnode->mutter = nullptr;
+			string vorname;
+			string nachname;
+			cout << "Vorname: ";
+			cin >> vorname;
+			newnode->vorname = vorname;
+			cout << "Nachname: ";
+			cin >> nachname;
+			newnode->nachname = nachname;
+		}
+	}
+
+	void plusmutter(){
+		if(!wurzel){
+			cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+		}else{
+			newnode = new TreeNode;
+			runptr->mutter = newnode;
+			newnode->nachfahre = runptr;
+			newnode->vater = nullptr;
+			newnode->mutter = nullptr;
+			string vorname;
+			string nachname;
+			cout << "Vorname: ";
+			cin >> vorname;
+			newnode->vorname = vorname;
+			cout << "Nachname: ";
+			cin >> nachname;
+			newnode->nachname = nachname;
+		}
+	}
+
+	void zuvater(){
+		if(!wurzel){
+			cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+		}else if(!runptr->vater){
+			cout << "Der Vaterknoten existiert nicht!" << endl;
+		}else{
+			runptr = runptr->vater;
+		}
+	}
+
+	void zumutter(){
+		if(!wurzel){
+			cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+		}else if(!runptr->mutter){
+			cout << "Der Mutterknoten existiert nicht!" << endl;
+		}else{
+			runptr = runptr->mutter;
+		}
+	}
+
+	void zunachfahre(){
+		if(!wurzel){
+			cout << "Erst muss ein Wurzelknoten erstellt werden!" << endl;
+		}else if(!runptr->nachfahre){
+			cout << "Sie befinden sich am Wurzelknoten!" << endl;
+		}else{
+			runptr = runptr->nachfahre;
+		}
+	}
+
+	Baum();
+	virtual ~Baum();
+};
+
+#endif /* BAUM_H_ */

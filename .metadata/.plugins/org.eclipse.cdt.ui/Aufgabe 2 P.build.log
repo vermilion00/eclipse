@@ -1,0 +1,24 @@
+16:14:14 **** Incremental Build of configuration Debug for project Aufgabe 2 P ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\aufgabe2P.o" "..\\src\\aufgabe2P.cpp" 
+..\src\aufgabe2P.cpp: In function 'int main()':
+..\src\aufgabe2P.cpp:41:33: warning: value computed is not used [-Wunused-value]
+   41 |                                 *stackptr++;
+      |                                 ^~~~~~~~~~~
+..\src\aufgabe2P.cpp:52:33: warning: value computed is not used [-Wunused-value]
+   52 |                                 *stackptr--;
+      |                                 ^~~~~~~~~~~
+..\src\aufgabe2P.cpp:56:25: warning: value computed is not used [-Wunused-value]
+   56 |                         *stackptr--;
+      |                         ^~~~~~~~~~~
+..\src\aufgabe2P.cpp: In function 'void calculate(std::string)':
+..\src\aufgabe2P.cpp:156:17: warning: value computed is not used [-Wunused-value]
+  156 |                 *stackptr--;
+      |                 ^~~~~~~~~~~
+..\src\aufgabe2P.cpp:162:9: warning: value computed is not used [-Wunused-value]
+  162 |         *stackptr--;
+      |         ^~~~~~~~~~~
+g++ -o "Aufgabe 2 P.exe" "src\\aufgabe2P.o" 
+
+16:14:17 Build Finished. 0 errors, 5 warnings. (took 2s.850ms)
+

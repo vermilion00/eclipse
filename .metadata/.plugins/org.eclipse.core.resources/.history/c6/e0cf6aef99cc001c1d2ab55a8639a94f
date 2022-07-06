@@ -1,0 +1,54 @@
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+
+#define len 100
+
+using namespace std;
+
+int nummern[len] = { 0 };
+bool change = true;
+
+void bubblesort(int array[len]);
+void swap(int &a, int &b);
+
+time_t t;
+
+int main() {
+	time(&t);
+	srand((unsigned int) t);
+	for (int i = 0; i < len; i++) {
+		nummern[i] = 1 + rand() % len;
+	}
+	bubblesort(nummern);
+	for (int i = 0; i < len; i++) {
+		cout << nummern[i] << endl;
+	}
+	cin >> nummern[0];
+	return 0;
+}
+
+void bubblesort(int array[len]){
+	//for(int j = len; j > 1; --j){
+	int j = len;
+	while((change == true) && (j > 1)){
+		change = false;
+		for(int k = 0; k < j - 1; ++k){
+			if(array[k] > array[k+1]){
+				swap(array[k], array[k+1]);
+			}
+		}
+		//cout << endl << "A";
+		if(change == false) {
+			break;
+		}
+	}
+}
+
+void swap(int &a, int &b) {
+	int temp;
+	temp = a;
+	a = b;
+	b = temp;
+	change = true;
+}
